@@ -9,7 +9,9 @@ django 2+ -> https://docs.djangoproject.com/en/2.1/topics/install/
 # Run the project
 * Clone/Download the repository to system.
 * Inside the directory open cmd
-* python manage.py runserver
+* Make sure you are connected to internet (for cdn to work) 
+* Enter Command "python manage.py runserver"(Windows)
 * open chrome and search url "127.0.0.1:8000/CRUD"
+* Admin url "127.0.0.1:8000/admin"
 * for admin panel username="admin" password="12345"
 
