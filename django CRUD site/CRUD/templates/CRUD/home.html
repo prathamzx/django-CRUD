@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.custom{
+    height:90px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <title>Home</title></head>
+<body style="margin:200px;"><div class="container" >
+    {%block content%}
+    <div class="row">
+        <div class="col-sm-3 btn btn-success custom">
+    <a style="color:white; font-size: 40px; text-decoration: none;" href="{% url 'CRUD:index'%}">Create</a></div>
+    <div class="col-sm-3 btn btn-primary">
+    <a style="color:white; font-size: 40px; text-decoration: none;" href="{% url 'CRUD:read'%}">Read</a></div>
+    <div class="col-sm-3 btn btn-warning">
+    <a style="color:white; font-size: 40px; text-decoration: none;" href="{% url 'CRUD:search'%}">Update</a></div>
+    <div class="col-sm-3 btn btn-danger">
+    <a style="color:white; font-size: 40px; text-decoration: none;" href="{% url 'CRUD:delete'%}">Delete</a></div>
+</div>
+    {%endblock%}
+</div>
+<footer style="color:red;">* Every time you perform a CRUD operation, Please check the admin panel! </footer>
+</body>
+</html>
